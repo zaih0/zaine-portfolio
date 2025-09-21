@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: #f4f6f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #0077cc;
+}
+a:hover {
+    color: #005fa3;
+}
+
+/* Login Page */
+.login-box {
+    max-width: 350px;
+    margin: 80px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.login-box h2 {
+    margin-bottom: 20px;
+}
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.login-box button:hover {
+    background: #005fa3;
+}
+
+/* Dashboard */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    vertical-align: middle;
+}
+table th {
+    background: #0077cc;
+    color: #fff;
+}
+table tr:hover {
+    background: #f9f9f9;
+}
+table img {
+    border-radius: 5px;
+}
+
+/* Buttons/Actions */
+button, .btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+button:hover, .btn:hover {
+    background: #005fa3;
+}
+.actions a {
+    margin-right: 10px;
+}
+
+/* Forms (Add/Edit Project) */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+form button {
+    width: 100%;
+}
