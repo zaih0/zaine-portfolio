@@ -1,6 +1,12 @@
 <?php
+
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 session_start();
-if (!isset($_SESSION['admin_logged_in'])) {
+if (!isset($_SESSION['admin'])) {
     header("Location: ../login.php");
     exit;
 }
@@ -35,6 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <textarea name="description" placeholder="Description"></textarea><br>
         <input type="file" name="image"><br>
         <input type="text" name="folder" placeholder="Project Folder Name (e.g., project1)">
+        <input type="text" name="link" placeholder="Project Link (optional)">
+
         <input type="text" name="github" placeholder="GitHub Repo URL (optional)">
 
         <button type="submit">Save</button>

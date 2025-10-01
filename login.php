@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->execute([$username]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if ($user && password_verify($password, $user['password'])) {
+    if ($user && hash('sha256', $password) === $user['password']){
         $_SESSION['admin'] = $user['username'];
         header("Location: admin/dashboard.php");
         exit;
