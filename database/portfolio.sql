@@ -27,7 +27,7 @@ CREATE TABLE admins (
 );
 
 INSERT INTO admins (username, password)
-VALUES ('admin', SHA2('admin123', 256));
+VALUES ('admin', SHA2('admin', 256));
 
 -- Messages
 DROP TABLE IF EXISTS messages;

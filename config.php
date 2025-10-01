@@ -1,9 +1,8 @@
 <?php
-// Database config (update for Plesk)
-$host = "localhost";
-$dbname = "portfolio_db";
-$username = "admin";
-$password = "admin123";
+$host = "localhost";       // or your Plesk host
+$dbname = "portfolio_db";     // database name
+$username = "admin";        // DB username
+$password = "admin";            // DB password (set this in Plesk)
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
